@@ -88,6 +88,18 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console
 */
+// console.log(reviews[5].name);
+let personReviews = []
+function filter (person) {
+for (let i=0; i<reviews.length; i++) {
+  if(reviews[i].name === person) {
+    personReviews.push(reviews[i]);
+  }
+}
+return personReviews;
+}
+filter('Daniela');
+console.log(personReviews);
 
 
 
@@ -98,6 +110,9 @@ Using the reviews array above do the following:
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
+reviews.push({
+
+})
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
