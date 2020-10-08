@@ -111,8 +111,10 @@ Using the reviews array above do the following:
 */
 
 reviews.push({
-
+name: 'Adham', rating: '5', feedback: 'I loved it'
 })
+
+console.log(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -121,7 +123,9 @@ Reyna's feedback is missing! Use what you know to do the following:
   2. log the reviews array to the console to check your work
 */
 
+reviews[7].feedback='I like the place overall'
 
+console.log(reviews);
 
 
 
@@ -134,11 +138,13 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+let returnedReview;
+function getReviewByIndex(arr, reviewIndex) {
+  returnedReview = `${arr[reviewIndex].name} gave the restaurant a ${arr[reviewIndex].rating} star review, and their feedback was: ${arr[reviewIndex].feedback}`; 
+  return returnedReview;
 }
-
+getReviewByIndex(reviews,0);
+console.log(returnedReview);
 
   
 
